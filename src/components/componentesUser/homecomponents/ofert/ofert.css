@@ -1,0 +1,150 @@
+.container-ofert {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-color);
+
+}
+
+.content-columns-ofert {
+    width: 90%;
+    height: 60vh;
+    border-radius: 10px;
+    border: 6px solid transparent;
+    box-shadow: 0 0 8px #194eb9;
+    padding: 10px;
+    display: flex;
+}
+
+.columns-ofer {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    padding: 10px;
+    color: var(--text-color);
+    transition: var(--tran-04);
+}
+
+.columns-ofer .buttons-prev-next {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.buttons-prev-next button {
+    background-color: var(--btn-hover-dark);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: var(--text-color);
+    transition: var(--tran-04);
+}
+
+
+.columns-ofer h1 {
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'MyFontRancho';
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.columns-ofer.izquierda span {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'MyFontMinion';
+}
+
+.carrusel-ofert {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-data {
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
+    color: var(--text-color);
+}
+
+.img-data-productos {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-data-productos img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-data .data-ofert {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    /* height: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrusel-data .data-ofert h2 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.discount-price strong {
+    color: #e60023;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+@media screen and (max-width:768px) {
+
+    .content-columns-ofert {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .columns-ofer {
+        width: 100%;
+        height: 100%;
+    }
+}

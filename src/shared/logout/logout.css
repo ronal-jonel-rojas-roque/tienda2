@@ -1,0 +1,10 @@
+.logout{
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout .icon{
+    fill: var(--text-color);
+}

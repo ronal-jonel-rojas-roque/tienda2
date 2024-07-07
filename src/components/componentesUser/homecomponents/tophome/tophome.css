@@ -1,0 +1,120 @@
+.container-top-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../../images/fondo/tophome.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-top-home {
+    width: 90%;
+    height: 50%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.izq-top-home {
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.text-izq {
+    width: 90%;
+    color: #fff;
+    background: rgba(31, 30, 30, 0.37);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.text-izq h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'MyFontRancho', cursive;
+}
+
+.text-izq span {
+    font-size: 1.1rem;
+    font-family: 'MyFontRancho', cursive;
+}
+
+.izq-top-home .btn-url {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.izq-top-home .btn-url .btn {
+    background: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #0bb5cc;
+}
+
+.der-top-home {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoom-der {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.large {
+    width: 100%;
+    min-height: 250px;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.discont {
+    z-index: 4;
+    right: 0;
+    bottom: 0;
+    transform: translateX(10%) translateY(-80%);
+}
+
+.discont img {
+    max-width: 100px;
+    height: 100px;
+}
+
+
+@media (max-width: 768px) {
+    .izq-top-home{
+        width: 100%;
+    }
+    
+    .large {
+        width: 250px;
+        height: auto;
+        position: absolute;
+        transform: translateY(0) translateX(30%);
+    }
+    .discont{
+        width: 100%;
+        transform: translateY(0) translateX(30%);
+    }
+}

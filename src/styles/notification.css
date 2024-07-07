@@ -1,0 +1,20 @@
+.toast-container-success {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.1rem;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 10px;
+    border: 2px solid var(--sucess-notifcation);
+  }
+  
+ 
+  .toast-container-error {
+    background-color: var(--text-color);
+    color: var(--error-notification);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid var(--error-notification);
+    z-index: 1000;
+  }

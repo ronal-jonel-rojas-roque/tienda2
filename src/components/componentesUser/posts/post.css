@@ -1,0 +1,117 @@
+.posts-container .post-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+
+.posts-container .filter-item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.posts-container .active-filter {
+    background: var(--second-color);
+    color: var(--toggle-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+
+.posts-container .post {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+.posts-container .post-box {
+    background: var(--body-color);
+    box-shadow: 0 4px 14px var(--second-color);
+    padding: 15px;
+    border-radius: 0.5rem;
+}
+
+.posts-container .post-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+
+.posts-container .category {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.posts-container .post-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--toggle-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'MyFontMinionReg';
+}
+
+.posts-container .post-date {
+    display: flex;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-weight: 400;
+    color: var(--text-color);
+    font-family: 'MyFontMinion';
+}
+
+.posts-container .post-description {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--text-color);
+    font-family: 'MyFontMinion';
+}
+
+.posts-container .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.posts-container .profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
+}
+
+.posts-container .profile-name {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .posts-container .post-header {
+        height: 435px;
+    }
+
+    .posts-container .post-header {
+        margin-top: 9rem !important;
+    }
+}

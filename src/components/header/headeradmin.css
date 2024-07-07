@@ -1,0 +1,60 @@
+/* ===================== Main ===================== */
+.main {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 100vh;
+  background: var(--black2);
+  transition: 0.5s;
+}
+
+.main.active {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+
+.Title-head {
+  position: relative;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.Title-head h2 {
+  position: relative;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+
+.user {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.user img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
